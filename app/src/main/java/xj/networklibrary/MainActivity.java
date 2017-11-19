@@ -14,6 +14,8 @@ import xj.network.HttpException;
 import xj.network.IResponseListener;
 import xj.network.LogUtil;
 import xj.network.NetManger;
+import xj.network.mtOkHttp.OKHttpRequest;
+import xj.network.volley.VolleyRequest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnGet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NetManger.getInstance().doGet(url, mMap, new IResponseListener() {
+                NetManger.getRequest(OKHttpRequest.class).doGet(url, mMap, new IResponseListener() {
                     @Override
                     public void onResponse(String response) {
                         mTv.setText("GET 请求\n"+response);
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnPush.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NetManger.getInstance().doPost(url, mMap, new IResponseListener() {
+                NetManger.getRequest(VolleyRequest.class).doPost(url, mMap, new IResponseListener() {
                     @Override
                     public void onResponse(String response) {
                         mTv.setText("post 请求\n"+response);

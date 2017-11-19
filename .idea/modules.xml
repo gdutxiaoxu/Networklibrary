@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Networklibrary.iml" filepath="$PROJECT_DIR$/Networklibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svip-club/svip-club.iml" filepath="$PROJECT_DIR$/svip-club/svip-club.iml" />
     </modules>
   </component>
 </project>

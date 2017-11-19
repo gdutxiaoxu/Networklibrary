@@ -62,8 +62,7 @@ public class VolleyRequest implements NetRequest {
     }
 
     @Override
-    public void doGet(String url, Map<String, String> paramsMap, IResponseListener
-            iResponseListener) {
+    public void doGet(String url, Map<String, String> paramsMap, IResponseListener iResponseListener) {
         doGet(url, paramsMap, null, iResponseListener);
     }
 
